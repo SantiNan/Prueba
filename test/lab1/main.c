@@ -14,7 +14,7 @@ int main(void){
     set_time(t_inicial);
     get_time(&t1);
 
-    inc_time();
+    inc_time(); // com gaby1
     inc_time();
     inc_time();
     inc_time();
