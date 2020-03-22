@@ -15,8 +15,8 @@ int main(void){
     get_time(&t1);
 
     inc_time(); // com gaby2
-    inc_time();// com santi 3
-    inc_time();
+    inc_time(); // com gaby 3
+    inc_time(); // com gaby 4
     inc_time();//comentario santi2
 
     get_time(&t2);
