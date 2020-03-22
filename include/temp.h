@@ -1,0 +1,4 @@
+
+void tempInit();
+
+int tempOut();
