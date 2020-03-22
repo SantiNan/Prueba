@@ -14,10 +14,15 @@ int main(void){
     set_time(t_inicial);
     get_time(&t1);
 
+<<<<<<< HEAD
     inc_time(); // com gaby2
     inc_time();
+=======
+    inc_time(); // comentario santi1
+>>>>>>> commit santi 2
     inc_time();
     inc_time();
+    inc_time();//comentario santi2
 
     get_time(&t2);
     get_time(&t_local);
