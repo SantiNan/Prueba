@@ -1,1 +1,5 @@
-*.pdf
+/lab1
+!*.qpf
+!*.qsf
+!*.vhd
+!*.wvf
