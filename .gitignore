@@ -1,2 +1,2 @@
 /carpeta1/
-!*.txt
+!/carpeta1/*.txt
