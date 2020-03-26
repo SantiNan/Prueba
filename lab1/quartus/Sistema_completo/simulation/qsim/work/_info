@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/santi/Dropbox/DocumentosSanti/Facultad/Dislog2/labs/lab1/Contador/quartus/Sistema_completo/simulation/qsim
+vsistema_completo
+Z1 !s100 ZD4jgW?40V9zb:YH3:glz3
+Z2 I_J>7P[i;XW;YJh3M8o0Wi1
+Z3 VU`4nz4E;?1kiY=RV2BZP10
+Z4 d/home/santi/dislog2/labs_g1/lab1/quartus/Sistema_completo/simulation/qsim
+Z5 w1584559077
+Z6 8sistema_completo.vo
+Z7 Fsistema_completo.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|sistema_completo.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1584559078.001123
+Z12 !s107 sistema_completo.vo|
+!s101 -O0
+vsistema_completo_vlg_check_tst
+!i10b 1
+Z13 !s100 ]``V7M>alcf>>_O`0HV3O3
+Z14 I5dNAm_FJ[HWch6cKYFa<g2
+Z15 V5PASVDNaeLi65hIfPGaAk0
+R4
+Z16 w1584559074
+Z17 8sistema_completo.vwf.vt
+Z18 Fsistema_completo.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1584559078.080506
+Z20 !s107 sistema_completo.vwf.vt|
+Z21 !s90 -work|work|sistema_completo.vwf.vt|
+!s101 -O0
+R10
+vsistema_completo_vlg_sample_tst
+!i10b 1
+Z22 !s100 z0A_Ogo9B2?;jZ0KT]07J1
+Z23 IAHOW1On<2jeDRg9ISNUJ43
+Z24 VmD`41oIDK=UZzkMzj?XY[1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vsistema_completo_vlg_vec_tst
+!i10b 1
+Z25 !s100 YzK?WKW6:>a1e1FQ]e3Td2
+Z26 IUVjANmcDe`B45Ff8lK;2X3
+Z27 VzaZcc[JKfmTQPSF0aThkH3
+R4
+R16
+R17
+R18
+Z28 L0 397
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

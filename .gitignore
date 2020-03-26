@@ -1,4 +1,6 @@
-/lab1/quartus/*
+/lab1/quartus/comparador
+/lab1/quartus/contador_decimal
+
 !*.qpf
 !*.qsf
 !*.vhd

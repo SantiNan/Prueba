@@ -1,0 +1,149 @@
+|sistema_completo
+BUTTONENA => comb.IN1
+BUTTONENA => contador_decimal:CONT1.ENABLE
+BUTTONCL => contador_decimal:CONT1.CLEAR_N
+BUTTONCL => contador_decimal:CONT2.CLEAR_N
+CLK_OUT => contador_decimal:CONT1.CLK
+CLK_OUT => contador_decimal:CONT2.CLK
+UNIDADES[0] <= hex27seg:HEX1.seg_out[0]
+UNIDADES[1] <= hex27seg:HEX1.seg_out[1]
+UNIDADES[2] <= hex27seg:HEX1.seg_out[2]
+UNIDADES[3] <= hex27seg:HEX1.seg_out[3]
+UNIDADES[4] <= hex27seg:HEX1.seg_out[4]
+UNIDADES[5] <= hex27seg:HEX1.seg_out[5]
+UNIDADES[6] <= hex27seg:HEX1.seg_out[6]
+DECENAS[0] <= hex27seg:HEX2.seg_out[0]
+DECENAS[1] <= hex27seg:HEX2.seg_out[1]
+DECENAS[2] <= hex27seg:HEX2.seg_out[2]
+DECENAS[3] <= hex27seg:HEX2.seg_out[3]
+DECENAS[4] <= hex27seg:HEX2.seg_out[4]
+DECENAS[5] <= hex27seg:HEX2.seg_out[5]
+DECENAS[6] <= hex27seg:HEX2.seg_out[6]
+
+
+|sistema_completo|contador_decimal:CONT1
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+CLK => mem[0].CLK
+CLK => mem[1].CLK
+CLK => mem[2].CLK
+CLK => mem[3].CLK
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+COUNT[0] <= mem[0].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[1] <= mem[1].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[2] <= mem[2].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[3] <= mem[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema_completo|contador_decimal:CONT2
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+ENABLE => mem.OUTPUTSELECT
+CLK => mem[0].CLK
+CLK => mem[1].CLK
+CLK => mem[2].CLK
+CLK => mem[3].CLK
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+CLEAR_N => mem.OUTPUTSELECT
+COUNT[0] <= mem[0].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[1] <= mem[1].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[2] <= mem[2].DB_MAX_OUTPUT_PORT_TYPE
+COUNT[3] <= mem[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema_completo|hex27seg:HEX1
+hex_in[0] => Mux0.IN19
+hex_in[0] => Mux1.IN19
+hex_in[0] => Mux2.IN19
+hex_in[0] => Mux3.IN19
+hex_in[0] => Mux4.IN19
+hex_in[0] => Mux5.IN19
+hex_in[0] => Mux6.IN19
+hex_in[1] => Mux0.IN18
+hex_in[1] => Mux1.IN18
+hex_in[1] => Mux2.IN18
+hex_in[1] => Mux3.IN18
+hex_in[1] => Mux4.IN18
+hex_in[1] => Mux5.IN18
+hex_in[1] => Mux6.IN18
+hex_in[2] => Mux0.IN17
+hex_in[2] => Mux1.IN17
+hex_in[2] => Mux2.IN17
+hex_in[2] => Mux3.IN17
+hex_in[2] => Mux4.IN17
+hex_in[2] => Mux5.IN17
+hex_in[2] => Mux6.IN17
+hex_in[3] => Mux0.IN16
+hex_in[3] => Mux1.IN16
+hex_in[3] => Mux2.IN16
+hex_in[3] => Mux3.IN16
+hex_in[3] => Mux4.IN16
+hex_in[3] => Mux5.IN16
+hex_in[3] => Mux6.IN16
+seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema_completo|hex27seg:HEX2
+hex_in[0] => Mux0.IN19
+hex_in[0] => Mux1.IN19
+hex_in[0] => Mux2.IN19
+hex_in[0] => Mux3.IN19
+hex_in[0] => Mux4.IN19
+hex_in[0] => Mux5.IN19
+hex_in[0] => Mux6.IN19
+hex_in[1] => Mux0.IN18
+hex_in[1] => Mux1.IN18
+hex_in[1] => Mux2.IN18
+hex_in[1] => Mux3.IN18
+hex_in[1] => Mux4.IN18
+hex_in[1] => Mux5.IN18
+hex_in[1] => Mux6.IN18
+hex_in[2] => Mux0.IN17
+hex_in[2] => Mux1.IN17
+hex_in[2] => Mux2.IN17
+hex_in[2] => Mux3.IN17
+hex_in[2] => Mux4.IN17
+hex_in[2] => Mux5.IN17
+hex_in[2] => Mux6.IN17
+hex_in[3] => Mux0.IN16
+hex_in[3] => Mux1.IN16
+hex_in[3] => Mux2.IN16
+hex_in[3] => Mux3.IN16
+hex_in[3] => Mux4.IN16
+hex_in[3] => Mux5.IN16
+hex_in[3] => Mux6.IN16
+seg_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sistema_completo|comparador:COMP1
+ENT_1[0] => Equal0.IN3
+ENT_1[1] => Equal0.IN2
+ENT_1[2] => Equal0.IN1
+ENT_1[3] => Equal0.IN0
+ENT_2[0] => Equal0.IN7
+ENT_2[1] => Equal0.IN6
+ENT_2[2] => Equal0.IN5
+ENT_2[3] => Equal0.IN4
+SAL <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
