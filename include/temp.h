@@ -1,4 +1,0 @@
-
-void tempInit();
-
-int tempOut();
