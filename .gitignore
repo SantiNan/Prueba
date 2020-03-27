@@ -1,12 +1,7 @@
 /lab1/quartus/*
-/lab1/quartus/*
-/lab1/quartus/*
-/lab1/quartus/*
-/lab1/quartus/*
 
 /lab2/quartus/*
-/lab2/quartus/*
-/lab2/quartus/*
+
 
 !*.qpf
 !*.qsf
