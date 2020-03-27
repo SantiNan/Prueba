@@ -1,8 +1,12 @@
-/lab1/quartus/comparador/*
-/lab1/quartus/contador_decimal/*
-/lab1/quartus/hex27seg/*
-/lab1/quartus/Sistema_completo/*
-/lab1/quartus/Sistema_en_placa/*
+/lab1/quartus/*
+/lab1/quartus/*
+/lab1/quartus/*
+/lab1/quartus/*
+/lab1/quartus/*
+
+/lab2/quartus/*
+/lab2/quartus/*
+/lab2/quartus/*
 
 !*.qpf
 !*.qsf
